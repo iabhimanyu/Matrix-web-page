@@ -1,0 +1,292 @@
+<html>
+<head>
+<title>Home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ 
+<style>
+.c1
+{
+color:green;
+}
+.c2
+{
+color:blue;
+}
+
+ 
+	body{
+	background-color: pink;
+	}
+ 
+        .container
+        {
+            font-family: sans-serif;
+            font-style: italic;
+            font-size: 40px;
+			
+        }
+    .navbar-header
+        {
+             margin-bottom: 80px;
+             font-family: sans-serif;
+            font-size: 40px;
+             
+        }
+    .navbar-brand
+        {
+            font-size: 50px;
+            font-family: orange;
+        }
+		nav
+			{
+			height:80px;
+			opacity:0.8;
+			}
+       
+
+			
+         li a
+		{
+			text-decoration: none;
+			line-height:80px;
+		}
+
+    
+ 
+ 
+ </style>
+
+
+
+</head>
+<body>
+
+
+<nav class="navbar navbar-inverse">
+    
+        
+ 
+    <div class="navbar-header">
+      <a class="navbar-brand" href="C:\Users\navee\OneDrive\Desktop\main.html">MtX-SoL.com</a>
+    </div>
+    <ul class="nav navbar-nav">
+                <li><a href="home.html">Home</a></li>
+				<li><a href="introduction.html">Introduction</a></li>
+				<li><a href="about.html">About</a></li>
+    </ul>
+  
+    
+</nav>
+<h1 style="color:red;text-decoration:underline">Introduction To Matrices</h1>
+<div style="margin-right:20px">
+<ul>
+<p>In mathematics, a matrix (plural: matrices) is a rectangular array[1] of numbers, symbols, or expressions, arranged in rows and columns.</p>
+
+<h2 class="c1">Equality :</h2>
+
+<p>Two matrices are equal if and only if
+</p>
+<ul>
+  <li>The order of the matrices are the same</li>
+  <li>The corresponding elements of the matrices are the same</li>
+</ul>
+<h2 class="c1">Addition :</h2>
+
+<ul>
+  <li>Order of the matrices must be the same</li>
+  <li>Add corresponding elements together</li>
+  <li>Matrix addition is commutative</li>
+  <li>Matrix addition is associative</li>
+</ul>
+<h2 class="c1">Subtraction :</h2>
+
+<ul>
+  <li>The order of the matrices must be the same</li>
+  <li>Subtract corresponding elements</li>
+  <li>Matrix subtraction is not commutative (neither is subtraction of real numbers)</li>
+  <li>Matrix subtraction is not associative (neither is subtraction of real numbers)</li>
+</ul>
+<h2 class="c1">Scalar Multiplication :</h2>
+<p>A scalar is a number, not a matrix.</p>
+<ul><li>The matrix can be any order</li>
+  <li>Multiply all elements in the matrix by the scalar</li>
+  <li>Scalar multiplication is commutative</li>
+  <li>Scalar multiplication is associative</li>
+</ul>
+<h2 class="c1">Zero Matrix :</h2>
+
+<ul>
+  <li>Matrix of any order</li>
+  <li>Consists of all zeros</li>
+  <li>Denoted by capital O</li>
+  <li>Additive Identity for matrices</li>
+  <li>Any matrix plus the zero matrix is the original matrix</li>
+</ul>
+<h2 class="c1">Matrix Multiplication :</h2>
+<p>A<sub>m&times;n</sub> &times; B<sub>n&times;p</sub> = C<sub>m&times;p</sub></p>
+<ul>
+  <li>The number of columns in the first matrix must be equal to
+the number of rows in the second matrix.  That is, the inner dimensions must be the same.</li>
+  <li>The order of the product is the number of rows in the first matrix by the number of columns in
+the second matrix.  That is, the dimensions of the product are the outer dimensions.</li>
+  <li>Since the number of columns in the first matrix is equal to the number of rows in the second
+matrix, you can pair up entries.</li>
+  <li>Each element in row <em>i</em> from the first matrix is paired up with an element in column <em>j</em> from the
+second matrix.</li>
+  <li>The element in row <em>i</em>, column <em>j</em>, of the product is formed by multiplying these paired elements
+and summing them.</li>
+  <li>Each element in the product is the sum of the products of the elements from
+row <em>i</em> of the first matrix and column <em>j</em> of the second matrix.  </li>
+  <li>There will be <em>n</em> products which are summed for each element in the product.</li>
+</ul>
+
+
+<h3 class="c2">Matrix multiplication is not commutative :</h3>
+
+<ul>
+  <li>Multiplication of real numbers is.</li>
+  <li>The inner dimensions may not agree if the order of the matrices is changed.</li>
+</ul>
+<h3 class="c2">Do not simply multiply corresponding elements together</h3>
+
+<ul>
+  <li>Since the order (dimensions) of the matrices don't have to be the same, there may not be
+corresponding elements to multiply together.</li>
+  <li>Multiply the rows of the first by the columns of the second and add.</li>
+</ul>
+<h3 class="c2">There is no matrix division</h3>
+
+<ul>
+  <li>There is no defined process for dividing a matrix by another matrix.</li>
+  <li>A matrix may be divided by a scalar.</li>
+</ul>
+<h2 class="c1">Identity Matrix :</h2>
+
+<ul>
+  <li>Square matrix</li>
+  <li>Ones on the main diagonal</li>
+  <li>Zeros everywhere else</li>
+  <li>Denoted by I. If a subscript is included, it is the order of the identity matrix.</li>
+  <li>I is the multiplicative identity for matrices</li>
+  <li>Any matrix times the identity matrix is the original matrix.</li>
+  <li>Multiplication by the identity matrix is commutative, although the order of the identity may
+change</li>
+</ul>
+<p>Identity matrix of size 2
+</p>
+<table border="0" cellspacing="0" cellpadding="1">
+  <tr>
+    <td rowspan="2" class="downhalf">I<sub>2</sub>      =</td>
+    <td class="matlt">&nbsp;</td>
+    <td class="lhs">1</td>
+    <td class="lhs">0</td>
+    <td class="matrt">&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="matlb">&nbsp;</td>
+    <td class="lhs">0</td>
+    <td class="lhs">1</td>
+    <td class="matrb">&nbsp;</td>
+  </tr>
+</table>
+<p>Identity matrix of size 3</p>
+<table border="0" cellspacing="0" cellpadding="1">
+  <tr>
+    <td rowspan="3" class="downhalf">I<sub>3</sub> = </td>
+    <td class="matlt">&nbsp;</td>
+    <td class="lhs">1</td>
+    <td class="lhs">0</td>
+    <td class="lhs">0</td>
+    <td class="matrt">&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="matlm">&nbsp;</td>
+    <td class="lhs">0</td>
+    <td class="lhs">1</td>
+    <td class="lhs">0</td>
+    <td class="matrm">&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="matlb">&nbsp;</td>
+    <td class="lhs">0</td>
+    <td class="lhs">0</td>
+    <td class="lhs">1</td>
+    <td class="matrb">&nbsp;</td>
+  </tr>
+</table>
+<h2 class="c1">Properties of Matrices :</h2>
+
+<table cellpadding="3" cellspacing="0">
+<tr>
+  <th scope="col" class="datath">Property</th>
+  <th scope="col" class="datath">Example</th>
+</tr>
+<tr>
+<td class="datal">Commutativity of Addition</td>
+<td class="datal">A + B = B + A</td>
+</tr>
+<tr>
+<td class="datal">Associativity of Addition</td>
+<td class="datal">A + ( B + C ) = ( A + B ) + C</td>
+</tr>
+<tr>
+<td class="datal">Associativity of Scalar Multiplication</td>
+<td class="datal">(cd) A = c (dA)</td>
+</tr>
+<tr>
+<td class="datal">Scalar Identity</td>
+<td class="datal">1A = A(1) = A</td>
+</tr>
+<tr>
+<td class="datal">Distributive</td>
+<td class="datal">c (A + B) = cA + cB</td>
+</tr>
+<tr>
+<td class="datal">Distributive</td>
+<td class="datal">(c + d) A = cA + dA</td>
+</tr>
+<tr>
+<td class="datal">Additive Identity</td>
+<td class="datal">A + O = O + A = A</td>
+</tr>
+<tr>
+<td class="datal">Associativity of Multiplication</td>
+<td class="datal">A (BC) = (AB) C</td>
+</tr>
+<tr>
+<td class="datal">Left Distributive</td>
+<td class="datal">A (B + C) = AB + AC</td>
+</tr>
+<tr>
+<td class="datal">Right Distributive</td>
+<td class="datal">( A + B ) C = AC + BC</td>
+</tr>
+<tr>
+<td class="datal">Scalar Associativity / Commutativity</td>
+<td class="datal">c (AB) = (cA) B = A (cB) = (AB) c</td>
+</tr>
+<tr>
+<td class="datal">Multiplicative Identity</td>
+<td class="datal">IA = AI = A</td>
+</tr></table>
+
+
+<h2 class="c1">Matrix Multiplication :</h2>
+
+<p>Matrix multiplication involves summing a product. It is appropriate where you
+  need to
+multiply things together and then
+add. As an example, multiplying the number of units by the per unit cost will
+  give the total
+cost.</p>
+<p>The units on the product are found
+by performing unit analysis on the
+matrices. The labels for the product are the labels of the rows of the first
+  matrix and the labels of the columns of the
+second matrix.</p>
+</ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ 
+<style>
+.c1
+{
+color:green;
+}
+.c2
+{
+color:blue;
+}
+
+ 
+	body{
+	background-color: #66C992;
+	}
+ 
+        .container
+        {
+            font-family: sans-serif;
+            font-style: italic;
+            font-size: 40px;
+			
+        }
+    .navbar-header
+        {
+             margin-bottom: 80px;
+             font-family: sans-serif;
+            font-size: 40px;
+             
+        }
+    .navbar-brand
+        {
+            font-size: 50px;
+            font-family: orange;
+        }
+		nav
+			{
+			height:80px;
+			opacity:0.8;
+			}
+       
+
+			
+         li a
+		{
+			text-decoration: none;
+			line-height:80px;
+		}
+
+    
+ 
+ 
+ </style>
+
+
+
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+    
+        
+ 
+    <div class="navbar-header">
+      <a class="navbar-brand" href="C:\Users\navee\OneDrive\Desktop\main.html">MtX-SoL.com</a>
+    </div>
+    <ul class="nav navbar-nav">
+                <li><a href="home.html">Home</a></li>
+				
+    
+<br>
+	<form method="post" onsubmit="return Add();" >
+		<input type='text' id='nOM' placeholder="Number Of Matrices"/>
+		<input type = "submit" value="Submit" />
+	</form>
+	
+
+	<fieldset><legend> Input </legend>
+	<p id = 'inp' >
+	Yet to enter...	
+	</p></fieldset>
+	<fieldset><legend> Output </legend>
+		<br>
+	<p id = "out">
+	Yet to process...
+	</p></fieldset>
+<script type="text/javascript">
+
+
+function Add()
+        {
+			var nOfMatrix = parseInt(document.getElementById("nOM").value);
+			var Rows = parseInt(prompt("Number of Rows : "));
+			var Column = parseInt(prompt("Number of Columns : "));
+			var ans = [];
+			var inpStr = "";
+			
+			for ( var i = 0 ; i < Rows*Column ; i++ )
+			{
+				var x = parseInt(prompt("Enter value : "));
+				ans.push(x);
+				inpStr += x.toString() + " &emsp;";
+				if ( (i+1)%Column === 0 ) 
+				{
+					inpStr += "<br><br>";
+				}				
+				
+			}
+			inpStr += "<br><br>";
+			for ( var i = 0 ; i < nOfMatrix - 1 ; i++ ) {
+				for ( var j = 0 ; j < Rows*Column ; j++ ) {
+					var x = parseInt(prompt("Enter value : "));
+					ans[j] += x;
+					inpStr += x.toString() + "&emsp; ";
+					if ( (j+1)%Column === 0 ) {
+					inpStr += "<br><br>";
+					}
+					
+					if ( (j+1)%(Rows*Column) === 0 ) {
+						inpStr += "<br><br>";
+					}
+					
+				}
+			}
+			
+			var outstr = "";
+			
+			for ( var j = 0 ; j < Rows*Column ; j++ ) {
+				outstr += ans[j].toString() + "&emsp; ";
+					if ( (j+1)%Column === 0 ) {
+					outstr += "<br><br>";
+					}
+			}
+			
+			document.getElementById("inp").innerHTML = inpStr;
+			document.getElementById("out").innerHTML = outstr;
+			return false;
+		}	
+	</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+* This project is based on topic - Matrix Operation
+
+In this we  calculate matrix operation  like- addition,subtraction,multiplication and transpose of matrices.
+
+*Function used :
+
+1.Add(): user can calculate the sum of any number of matrices(what ever user wish)  of any size (m*n).
+
+2. subtract(): user can calculate the difference of any number of matrices (what ever user wish) of any size (m*n). 
+
+3. mult() : user can calculate the product of two matrices of any size (m*n). 
+
+4.Transpose() : converting row into column.
+
+*Name of files used :
+1.home
+2.introduction
+3.add
+4.subtract
+5.mult
+6.transpose
+
+*project member :
+1.Abhimanyu Raj (abhimanyuraj118@gmail.com)
+
